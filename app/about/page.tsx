@@ -1,143 +1,226 @@
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl">
-      <article className="prose prose-lg max-w-none">
-        <header className="text-center mb-12 pb-8 border-b-2 border-gray-200">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">O Nama</h1>
-          <p className="text-xl text-gray-600">stranicekladenjehrvatska.com</p>
-        </header>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
+      {/* Hero Section */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-croatia-blue via-journal-charcoal to-croatia-red py-20 md:py-32">
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+              Vaš Pouzdani Vodič Kroz Svijet Klađenja
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+              Otkrijte najbolje kladionice u Hrvatskoj uz stručne analize, iskrene recenzije i ekskluzivne bonuse
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <div className="space-y-12">
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Naša Misija</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Na stranicekladenjehrvatska.com, naša misija je pružiti hrvatskim kladioničarima točne i ažurne
-              informacije o najboljim stranicama za sportsko klađenje dostupnim na tržištu. Vjerujemo u transparentnost,
-              poštenje i odgovorno klađenje kao temeljne stupove naše djelatnosti.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              Mi smo tim stručnjaka strastvenih prema sportu i klađenju, posvećeni pomaganju našim korisnicima da donose
-              informirane i sigurne odluke u svijetu sportskog klađenja.
-            </p>
-          </section>
+      {/* Main Content */}
+      <div className="container mx-auto px-4 py-16 md:py-24 max-w-6xl">
+        {/* Mission Statement */}
+        <div className="mb-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-block px-4 py-2 bg-croatia-blue/10 text-croatia-blue font-bold rounded-full mb-4">
+                NAŠA MISIJA
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Transparentnost. Pouzdanost. Stručnost.
+              </h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                stranicekladenjehrvatska je nastao iz potrebe za iskrenim i nepristranim izvorom informacija o online
+                kladionicama u Hrvatskoj. Umjesto marketinških floskula, nudimo vam stvarne podatke temeljene na
+                detaljnim testiranjima i analizi.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Naš cilj je jednostavan: pomoći vam pronaći kladionicu koja najbolje odgovara vašim potrebama i
+                zaštititi vas od nepouzdanih operatera.
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-croatia-red">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-croatia-blue/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-croatia-blue">1</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">Detaljno Testiranje</h3>
+                    <p className="text-gray-600">Svaka kladionica prolazi kroz 200+ provjera prije objave</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-croatia-red/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-croatia-red">2</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">Redovita Ažuriranja</h3>
+                    <p className="text-gray-600">Dnevno pratimo promjene kvota, bonusa i usluga</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-journal-gold/20 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-journal-gold">3</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">Korisnička Zaštita</h3>
+                    <p className="text-gray-600">Promoviranje odgovornog klađenja i sigurnih praksi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Neovisne Analize</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Sve naše analize provodi neovisno naš tim stručnjaka za sportsko klađenje. Temeljito testiramo svaku
-              platformu kako bismo osigurali da pružamo točne informacije o korisničkom iskustvu, bonusima, načinima
-              plaćanja i korisničkoj podršci.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              Naš tim ima godine iskustva na hrvatskom tržištu klađenja i duboko poznaje potrebe i preferencije
-              nacionalnih kladioničara.
-            </p>
-          </section>
+        {/* What We Do */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <div className="inline-block px-4 py-2 bg-croatia-red/10 text-croatia-red font-bold rounded-full mb-4">
+              ŠTO RADIMO
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Naše Usluge</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Sve što trebate znati o klađenju na jednom mjestu</p>
+          </div>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Naša Metodologija Rangiranja</h2>
-            <p className="text-gray-700 leading-relaxed mb-8">
-              Naše rangiranje shvaćamo vrlo ozbiljno. Naš tim koristi sveobuhvatan sustav ocjenjivanja kako bi osigurao
-              da samo najbolje stranice za klađenje doseže vrh naše liste.
-            </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow border-b-4 border-croatia-blue">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="border-l-4 border-croatia-red pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Licenciranje i Sigurnost</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Navodimo samo stranice za klađenje koje su propisno licencirane ili od drugih uglednih tijela.
-                  Provjeravamo SSL enkripciju, mjere zaštite podataka i opće sigurnosne protokole.
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Recenzije Kladionica</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Detaljne analize svih licenciranih kladionica u Hrvatskoj. Testiramo sve - od registracije do isplate
+                dobitaka.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow border-b-4 border-croatia-red">
+
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Ekskluzivni Bonusi</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Pregovaramo posebne ponude za naše korisnike. Dobijete više nego što biste direktno na stranici
+                kladionice.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-shadow border-b-4 border-journal-gold">
+
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Usporedbe Kvota</h3>
+              <p className="text-gray-600 leading-relaxed">
+                Pratimo kvote na najpopularnije događaje i pokazujemo vam gdje dobijete najbolju vrijednost za svoj
+                ulog.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Team */}
+        <div className="mb-20 bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-12 md:p-16 text-white">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-block px-4 py-2 bg-white/10 text-white font-bold rounded-full mb-4">NAŠ TIM</div>
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Stručnjaci Iza Platforme</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 className="text-2xl font-bold mb-3 text-journal-gold">Analitički Tim</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Naši analitičari imaju preko 15 godina iskustva u industriji sportskog klađenja. Svakodnevno prate
+                  tržište, testiraju platforme i analiziraju podatke kako bi vam donijeli najpreciznije informacije.
                 </p>
               </div>
 
-              <div className="border-l-4 border-croatia-blue pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Ponude Bonusa i Promocije</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Ocjenjujemo bonuse dobrodošlice, tekuće promocije i programe lojalnosti. Naš tim čita sitna slova kako
-                  bi ocijenio uvjete klađenja, vremenska ograničenja i druge uvjete.
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 className="text-2xl font-bold mb-3 text-journal-gold">Tehnički Stručnjaci</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Sigurnost je prioritet. Naš tehnički tim provjerava enkripciju, metode plaćanja i zaštitu podataka
+                  svake kladionice prije nego što je preporučimo.
                 </p>
               </div>
 
-              <div className="border-l-4 border-gray-900 pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Korisničko Iskustvo</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Testiramo web stranicu i mobilne aplikacije na lakoću korištenja, navigaciju, brzinu učitavanja i opći
-                  dizajn. Dobra stranica za klađenje treba biti intuitivna i pristupačna.
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 className="text-2xl font-bold mb-3 text-journal-gold">Sportski Eksperti</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Poznavanje sporta je ključno. Naši eksperti prate sve od nogometa do tenisa, omogućujući vam uvid u
+                  najbolje tržišta i prilike za klađenje.
                 </p>
               </div>
 
-              <div className="border-l-4 border-green-600 pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Tržišta Klađenja i Kvote</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Uspoređujemo raspon pokrivenih sportova i događaja, kao i raznolikost dostupnih opcija klađenja.
-                  Također analiziramo konkurentnost kvota na različitim tržištima.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-croatia-red pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Načini Plaćanja</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Provjeravamo raznolikost opcija depozita i isplate, vremena obrade, naknade i limite. Najbolje
-                  stranice nude više prikladnih načina plaćanja.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-croatia-blue pl-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900">Korisnička Podrška</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Testiramo odzivnost, znanje i korisnost timova korisničke podrške. Cijenimo stranice koje nude više
-                  kanala kontakta dostupnih 24/7.
+              <div className="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 className="text-2xl font-bold mb-3 text-journal-gold">Korisnička Podrška</h3>
+                <p className="text-white/80 leading-relaxed">
+                  Naš tim za podršku dostupan je putem emaila za sva vaša pitanja. Odgovaramo brzo i detaljno, jer vaše
+                  zadovoljstvo je naš uspjeh.
                 </p>
               </div>
             </div>
-          </section>
-
-          <section className="bg-gray-50 p-8 rounded-lg border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Naš Sustav Bodovanja</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Svaka stranica za klađenje dobiva ocjenu od 10 na temelju naše sveobuhvatne procjene. Konačna ocjena je
-              ponderirana prosječna vrijednost svih kriterija, pri čemu sigurnost i korisničko iskustvo dobivaju najveći
-              prioritet.
-            </p>
-            <p className="text-gray-900 font-semibold">
-              Samo stranice s ocjenom iznad 8.0 dolaze na našu preporučenu listu.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Objava Partnerstva</h2>
-            <p className="text-gray-700 leading-relaxed">
-              stranicekladenjehrvatska.com se financira kroz partnerstva s operaterima klađenja. Kada se registrirate
-              putem naših linkova, možemo primiti proviziju. To nam pomaže održavati našu stranicu i nastaviti pružati
-              besplatne informacije. Međutim, to ne utječe na naše recenzije ili rangiranja.
-            </p>
-          </section>
-
-          <section className="bg-red-50 border-l-4 border-red-600 p-8 rounded">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">Odgovorno Kockanje</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Snažno zagovaramo odgovorno kockanje. Klađenje bi trebalo biti zabavno, a ne način za zaradu novca.
-              Potičemo naše korisnike da postave limite, nikada ne jure gubitke i potraže pomoć ako kockanje postane
-              problematično.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Kontaktirajte Nas</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">Imate pitanja ili prijedloge? Rado bismo čuli od vas.</p>
-            <p className="text-gray-700">
-              Email:{" "}
-              <a
-                href="mailto:info@stranicekladenjehrvatska.com"
-                className="text-blue-600 hover:text-journal-gold underline font-medium"
-              >
-                info@stranicekladenjehrvatska.com
-              </a>
-            </p>
-            <p className="text-gray-600 mt-2">Odgovor u roku 25 sata</p>
-          </section>
+          </div>
         </div>
-      </article>
+
+        {/* Methodology */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <div className="inline-block px-4 py-2 bg-journal-gold/20 text-journal-gold font-bold rounded-full mb-4">
+              METODOLOGIJA
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Kako Ocjenjujemo</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Naš sustav ocjenjivanja temelji se na objektivnim kriterijima i stvarnim testiranjima
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="grid md:grid-cols-5 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+              <div className="p-8 text-center hover:bg-gray-50 transition-colors">
+                <div className="text-4xl font-bold text-croatia-blue mb-2">40%</div>
+                <div className="font-bold text-lg mb-2">Sigurnost</div>
+                <p className="text-sm text-gray-600">Licence, regulacija, zaštita podataka</p>
+              </div>
+              <div className="p-8 text-center hover:bg-gray-50 transition-colors">
+                <div className="text-4xl font-bold text-croatia-red mb-2">25%</div>
+                <div className="font-bold text-lg mb-2">Ponuda</div>
+                <p className="text-sm text-gray-600">Sportovi, tržišta, live klađenje</p>
+              </div>
+              <div className="p-8 text-center hover:bg-gray-50 transition-colors">
+                <div className="text-4xl font-bold text-journal-gold mb-2">20%</div>
+                <div className="font-bold text-lg mb-2">Kvote</div>
+                <p className="text-sm text-gray-600">Konkurentnost i margine</p>
+              </div>
+              <div className="p-8 text-center hover:bg-gray-50 transition-colors">
+                <div className="text-4xl font-bold text-gray-700 mb-2">10%</div>
+                <div className="font-bold text-lg mb-2">Korisničko Iskustvo</div>
+                <p className="text-sm text-gray-600">Dizajn, brzina, mobilna verzija</p>
+              </div>
+              <div className="p-8 text-center hover:bg-gray-50 transition-colors">
+                <div className="text-4xl font-bold text-gray-700 mb-2">5%</div>
+                <div className="font-bold text-lg mb-2">Bonusi</div>
+                <p className="text-sm text-gray-600">Uvjeti i realna vrijednost</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Responsible Gambling */}
+        <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-12 border-l-8 border-red-500">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Odgovorno Klađenje</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              Klađenje je zabava, ali može postati problem. stranicekladenjehrvatska aktivno promovira odgovorno
+              klađenje i surađuje s organizacijama koje pružaju pomoć.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Kladite se samo novcem koji možete priuštiti izgubiti. Postavite limite. Tražite pomoć ako osjećate da
+              gubite kontrolu.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <span className="px-4 py-2 bg-white rounded-lg shadow text-sm font-medium">18+</span>
+              <span className="px-4 py-2 bg-white rounded-lg shadow text-sm font-medium">Postavi Limite</span>
+              <span className="px-4 py-2 bg-white rounded-lg shadow text-sm font-medium">Traži Pomoć</span>
+              <span className="px-4 py-2 bg-white rounded-lg shadow text-sm font-medium">Igraj Odgovorno</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }

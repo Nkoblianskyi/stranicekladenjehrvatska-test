@@ -1,140 +1,174 @@
 export default function CookiePolicyPage() {
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl">
-      <article className="prose prose-lg max-w-none">
-        <header className="text-center mb-12 pb-8 border-b-2 border-gray-200">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Politika Kolačića</h1>
-          <p className="text-gray-600">
-            Posljednje ažuriranje:{" "}
-            {new Date().toLocaleDateString("hr-HR", { year: "numeric", month: "long", day: "numeric" })}
-          </p>
-        </header>
-
-        <div className="space-y-12">
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Što su Kolačići</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Kolačići su male tekstualne datoteke koje se postavljaju na vaše računalo ili mobilni uređaj kada
-              posjetite web stranicu. Široko se koriste kako bi web stranice funkcionirale učinkovitije i pružale
-              informacije vlasnicima stranice. Kolačići poboljšavaju korisničko iskustvo pamteći vaše postavke i
-              omogućavajući određene funkcionalnosti.
+    <div className="bg-journal-paper min-h-screen">
+      <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
+        <article className="bg-white shadow-sm border border-journal-gray/20">
+          <header className="text-center px-6 md:px-12 pt-12 pb-8 border-b-4 border-double border-journal-charcoal">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-journal-black mb-3">
+              Politika Kolačića
+            </h1>
+            <div className="w-24 h-1 bg-journal-gold mx-auto mb-4"></div>
+            <p className="text-journal-gray font-medium">
+              Posljednje ažuriranje:{" "}
+              {new Date().toLocaleDateString("hr-HR", { year: "numeric", month: "long", day: "numeric" })}
             </p>
-          </section>
+          </header>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Kako Koristimo Kolačiće</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              stranicekladenjehrvatska.com koristi kolačiće iz različitih razloga:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li>Funkcionalnost stranice</li>
-              <li>Pamćenje vaših postavki tijekom i između posjeta</li>
-              <li>Poboljšanje brzine i sigurnosti stranice</li>
-              <li>Omogućavanje dijeljenja sadržaja preko društvenih mreža</li>
-              <li>Poboljšavanje naše stranice za vas</li>
-              <li>Učinkovitiji marketing</li>
-            </ul>
-          </section>
+          <div className="px-6 md:px-12 py-10 space-y-10">
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4 pb-2 border-b-2 border-journal-gold">
+                Uvod u Kolačiće
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Kolačići predstavljaju male datoteke koje web stranice pohranjuju na vaš uređaj tijekom pregledavanja.
+                Ove datoteke omogućavaju stranicama da zapamte vaše postavke, preferencije i aktivnosti, čineći vaše
+                iskustvo pregledavanja bržim i personaliziranijim.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                stranicekladenjehrvatska.com koristi kolačiće isključivo u svrhu poboljšanja funkcionalnosti platforme i
+                pružanja bolje korisničke usluge. Ova politika detaljno objašnjava koje vrste kolačića koristimo i kako
+                možete kontrolirati njihovu upotrebu.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Tipovi Kolačića koje Koristimo</h2>
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4 pb-2 border-b-2 border-journal-gold">
+                Svrha Korištenja Kolačića
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Na našoj platformi kolačići služe za nekoliko ključnih funkcija:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li>Održavanje sigurnosti i integriteta platforme</li>
+                <li>Pamćenje vaših jezičnih i regionalnih postavki</li>
+                <li>Analiza ponašanja korisnika radi poboljšanja sadržaja</li>
+                <li>Personalizacija preporuka kladionica prema vašim interesima</li>
+                <li>Mjerenje učinkovitosti naših informativnih kampanja</li>
+                <li>Omogućavanje dijeljenja sadržaja na društvenim mrežama</li>
+              </ul>
+            </section>
 
-            <div className="space-y-8">
-              <div className="border-l-4 border-croatia-blue pl-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Osnovni Kolačići</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Ovi kolačići su potrebni za ispravno funkcioniranje stranice. Omogućavaju glavne funkcionalnosti poput
-                  sigurnosti, upravljanja mrežom i pristupa računu. Možete ih onemogućiti mijenjajući postavke vašeg
-                  pretraživača, ali to može utjecati na kako funkcionira stranica.
-                </p>
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-6 pb-2 border-b-2 border-journal-gold">
+                Kategorije Kolačića
+              </h2>
+
+              <div className="space-y-6">
+                <div className="border-l-4 border-croatia-blue pl-6 bg-journal-paper/30 py-4">
+                  <h3 className="font-serif text-xl font-bold mb-3 text-journal-black">Nužni Kolačići</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Ovi kolačići su kritični za osnovne funkcije stranice poput navigacije i pristupa sigurnim
+                    područjima. Bez njih platforma ne može funkcionirati pravilno. Ovi kolačići ne prikupljaju
+                    informacije koje bi se mogle koristiti za marketing ili praćenje vaših aktivnosti na drugim
+                    stranicama.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-croatia-red pl-6 bg-journal-paper/30 py-4">
+                  <h3 className="font-serif text-xl font-bold mb-3 text-journal-black">Analitički Kolačići</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Pomoću ovih kolačića prikupljamo agregirane podatke o tome kako posjetitelji koriste našu platformu.
+                    Informacije poput broja posjeta, izvora prometa i najpopularnijih stranica pomažu nam optimizirati
+                    sadržaj i poboljšati korisničko iskustvo. Svi podaci su anonimizirani i ne mogu se povezati s vašim
+                    identitetom.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-journal-charcoal pl-6 bg-journal-paper/30 py-4">
+                  <h3 className="font-serif text-xl font-bold mb-3 text-journal-black">Funkcionalni Kolačići</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Ovi kolačići omogućavaju platformi da zapamti vaše izbore i pruži poboljšane, personalizirane
+                    značajke. Na primjer, mogu zapamtiti vaš odabir jezika, regiju ili preferencije prikaza. Informacije
+                    koje prikupljaju mogu biti anonimizirane i ne prate vašu aktivnost na drugim web stranicama.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-journal-gold pl-6 bg-journal-paper/30 py-4">
+                  <h3 className="font-serif text-xl font-bold mb-3 text-journal-black">Marketinški Kolačići</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Ovi kolačići prate vašu aktivnost na našoj platformi kako bi nam pomogli prikazati relevantan
+                    sadržaj i preporuke. Mogu se koristiti za mjerenje učinkovitosti kampanja i ograničavanje broja puta
+                    kada vidite određeni sadržaj. Uvijek možete onemogućiti ove kolačiće u postavkama.
+                  </p>
+                </div>
               </div>
+            </section>
 
-              <div className="border-l-4 border-croatia-red pl-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Kolačići za Performans</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Ovi kolačići nam pomažu razumjeti kako se posjetitelji susretnu s našom stranicom prikupljajući i
-                  prijavljivajući anonimne informacije. Omogućavaju nam prepoznajte i brojanje posjetitelja i vidjeti
-                  kako se posjetitelji kretaju kroz našu stranicu dok je koriste.
-                </p>
-              </div>
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4 pb-2 border-b-2 border-journal-gold">
+                Kolačići Vanjskih Servisa
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                stranicekladenjehrvatska.com koristi usluge pouzdanih vanjskih partnera koji također mogu postavljati
+                kolačiće:
+              </p>
+              <ul className="list-disc list-inside space-y-3 text-gray-700 ml-4">
+                <li>
+                  <strong>Analitički servisi:</strong> Koristimo Google Analytics za razumijevanje ponašanja korisnika i
+                  optimizaciju platforme. Ovi kolačići prikupljaju anonimizirane podatke o vašim posjetama.
+                </li>
+                <li>
+                  <strong>Društvene mreže:</strong> Integracije s društvenim mrežama omogućavaju vam dijeljenje
+                  sadržaja. Ove platforme mogu postavljati vlastite kolačiće za praćenje interakcija.
+                </li>
+                <li>
+                  <strong>Sigurnosni servisi:</strong> Koristimo sigurnosne alate za zaštitu od zlonamjernih aktivnosti
+                  i osiguranje integriteta platforme.
+                </li>
+              </ul>
+            </section>
 
-              <div className="border-l-4 border-gray-900 pl-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Kolačići za Funkcionalnost</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Ovi kolačići omogućavaju stranici pružanje poboljšane i personalizirane funkcionalnosti. Mogu biti
-                  postavljeni od strane nas ili trećih strana koji pružaju usluge koje dodajemo naše stranice.
-                </p>
-              </div>
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4 pb-2 border-b-2 border-journal-gold">
+                Kontrola nad Kolačićima
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Imate potpunu kontrolu nad kolačićima koje prihvaćate. Većina modernih preglednika omogućava upravljanje
+                kolačićima kroz postavke:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                <li>Blokiranje svih kolačića</li>
+                <li>Prihvaćanje samo kolačića s određenih stranica</li>
+                <li>Brisanje kolačića nakon zatvaranja preglednika</li>
+                <li>Primanje obavijesti prije postavljanja kolačića</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                Napomena: Onemogućavanje određenih kolačića može utjecati na funkcionalnost platforme i vaše korisničko
+                iskustvo. Preporučujemo dopuštanje barem nužnih kolačića.
+              </p>
+            </section>
 
-              <div className="border-l-4 border-green-600 pl-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Kolačići za Segmentaciju</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Ovi kolačići evidenciraju vašu posjetu našoj stranici, stranice koje ste posjetili i linkove koje ste
-                  pratili. Koristit ćemo ovu informaciju kako bismo poboljšali našu stranicu i oglasnu kampanju koja se
-                  nalazi na njoj.
-                </p>
-              </div>
-            </div>
-          </section>
+            <section>
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4 pb-2 border-b-2 border-journal-gold">
+                Ažuriranja Politike
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                stranicekladenjehrvatska.com zadržava pravo periodičnog ažuriranja ove politike kolačića kako bi
+                odražavala promjene u tehnologiji, zakonodavstvu ili našim poslovnim praksama. Sve značajne promjene bit
+                će istaknute na platformi, a datum posljednjeg ažuriranja uvijek je vidljiv na vrhu dokumenta.
+              </p>
+            </section>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Kolačići Trećih Strana</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              U nekim posebnim slučajevima također koristimo kolačiće pružene pouzdanom trećoj strani:
-            </p>
-            <ul className="list-disc list-inside space-y-3 text-gray-700 ml-4">
-              <li>
-                Ova stranica koristi Google Analytics, koji je jedna od najpopularnijih i pouzdanih rješenja za analizu
-                na webu kako bismo razumjeli kako koristite stranicu i načine na koje možemo poboljšati vaše iskustvo.
-              </li>
-              <li>
-                Također koristimo gumbove za društvene mreže i/ili priključnike na ovoj stranici koji vam omogućavaju
-                povezivanje s vašom društvenom mrežom na različite načine. Da bi funkcionirali, stranice društvenih
-                mreža postavljaju kolačiće putem naše stranice.
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Upravljanje Kolačićima</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Većina pretraživača weba omogućava neki kontrolu nad većinom kolačića putem postavki pretraživača. Za više
-              informacija o kolačićima, uključujući kako vidjeti koje kolačiće su postavljeni, posjetite:
-            </p>
-            <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-              <li>www.aboutcookies.org</li>
-              <li>www.allaboutcookies.org</li>
-            </ul>
-            <p className="text-gray-700 leading-relaxed mt-4">
-              Za odbijanje praćenja od strane Google Analytics na svim stranicama, posjetite:{" "}
-              <span className="text-croatia-blue font-medium">https://tools.google.com/dlpage/gaoptout</span>
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Promjene u Našoj Politici Kolačića</h2>
-            <p className="text-gray-700 leading-relaxed">
-              Možemo periodično ažurirati našu Politiku Kolačića. Obavijestit ćemo vas o svim promjenama objavljivanjem
-              nove Politike Kolačića na ovoj stranici i ažuriranjem datuma "Posljednje ažuriranje" na vrhu ove politike.
-            </p>
-          </section>
-
-          <section className="bg-gray-50 p-8 rounded-lg border border-gray-200">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Kontaktirajte Nas</h2>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              Ako imate pitanja o našoj Politici Kolačića, kontaktirajte nas na:
-            </p>
-            <p className="text-gray-900 font-semibold">
-              <a
-                href="mailto:info@stranicekladenjehrvatska.com"
-                className="text-blue-600 hover:text-journal-gold underline"
-              >
-                info@stranicekladenjehrvatska.com
-              </a>
-            </p>
-          </section>
-        </div>
-      </article>
+            <section className="bg-journal-paper border-2 border-journal-gold p-8 rounded">
+              <h2 className="font-serif text-2xl md:text-3xl font-bold text-journal-black mb-4">
+                Pitanja o Kolačićima
+              </h2>
+              <p className="text-journal-gray font-medium mb-3">
+                Za dodatne informacije o našoj upotrebi kolačića ili za postavljanje pitanja, kontaktirajte nas:
+              </p>
+              <p className="text-journal-black font-semibold">
+                <a
+                  href="mailto:info@stranicekladenjehrvatska.com"
+                  className="text-croatia-blue hover:text-journal-gold underline transition-colors"
+                >
+                  info@stranicekladenjehrvatska.com
+                </a>
+              </p>
+              <p className="text-gray-600 mt-2">Odgovaramo na sve upite u roku od 24 sata</p>
+            </section>
+          </div>
+        </article>
+      </div>
     </div>
   )
 }
