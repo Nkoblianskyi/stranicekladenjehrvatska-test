@@ -57,34 +57,56 @@ export function HrvatskaBettingFooter() {
         {/* Responsible Gambling Organizations */}
         <div className="border-t border-gray-700 pt-6 mb-6">
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-            <Image
-              src="/quinn.png"
-              alt="BeGambleAware"
-              width={120}
-              height={40}
-              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <Image
-              src="/gamble-aware.png"
-              alt="GambleAware"
-              width={120}
-              height={40}
-              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <Image
-              src="/gamcare.png"
-              alt="GamCare"
-              width={120}
-              height={40}
-              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
-            <Image
-              src="/GamblingCare-w.png"
-              alt="Gambling Therapy"
-              width={120}
-              height={40}
-              className="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity"
-            />
+            <Link
+              href="https://www.gamcare.org.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-[80px] h-[32px] md:w-[100px] md:h-[40px]">
+                <Image src="/gamecare-new.svg" alt="GamCare" fill className="object-contain" />
+              </div>
+            </Link>
+
+            <Link
+              href="https://www.gambleaware.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-[80px] h-[32px] md:w-[100px] md:h-[40px]">
+                <Image src="/gamble-aware.webp" alt="GambleAware" fill className="object-contain" />
+              </div>
+            </Link>
+
+            <Link
+              href="https://www.hupis.hr/klok"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-[80px] h-[32px] md:w-[100px] md:h-[40px]">
+                <Image src="/hupis.png" alt="hupis" fill className="object-contain" />
+              </div>
+            </Link>
+
+            <Link
+              href="https://www.gamstop.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              
+            >
+              <div className="relative w-[80px] h-[32px] md:w-[100px] md:h-[40px]">
+                <Image src="/gamstop.svg" alt="GamStop" fill className="object-contain" />
+              </div>
+            </Link>
+
+            <Link
+              href="https://www.pbsvi.hr/strucni-programi-i-klub/kocka-terapijsko-rehabilitacijski-program-za-ovisnost-o-kockanju/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-[80px] h-[32px] md:w-[100px] md:h-[40px] rounded px-2 py-1">
+                <Image src="/pbsvi.svg" alt="pbsvi" fill className="object-contain" />
+              </div>
+            </Link>
           </div>
         </div>
 
