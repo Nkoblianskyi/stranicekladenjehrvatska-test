@@ -66,9 +66,9 @@ export function HrvatskaBettingTopOffersModal({ sites }: TopOffersModalProps) {
 
         <div className="bg-white px-6 py-6">
           {/* Logo and site name */}
-          <div className="flex items-center justify-center gap-4 mb-5 pb-5 border-b border-gray-200">
-            <div className="relative bg-gray-50 h-16 w-32 rounded border border-gray-200 overflow-hidden">
-              <Image src={topSite.logo || "/placeholder.svg"} alt={topSite.name} fill className="object-contain p-2" />
+          <div className="flex flex-col items-center justify-center gap-4 mb-5 pb-5 border-b border-gray-200">
+            <div className="relative bg-black p-2 h-16 w-32 rounded border border-gray-200 overflow-hidden">
+              <Image src={topSite.logo || "/placeholder.svg"} alt={topSite.name} fill className="object-contain p-2 max-w-[95%] mx-auto" />
             </div>
             <div>
               <div className="font-bold text-lg text-journal-charcoal">{topSite.name}</div>
